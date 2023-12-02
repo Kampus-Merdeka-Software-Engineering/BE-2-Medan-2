@@ -6,8 +6,8 @@ const PORT = process.env.PORT;
 
 const bookTicketRoute = require("./src/routes/bookTicketRoute");
 const checkTicketRoute = require("./src/routes/checkTickeRoute");
-const database = require("./database");
-const sequelize = require("./database");
+const database = require("./src/config/dbConfig");
+const sequelize = require("./src/config/dbConfig");
 
 app.use(express.json());
 app.use(cors());
