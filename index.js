@@ -16,7 +16,7 @@ app.use(cors());
 app.use("/book-ticket", bookTicketRoute);
 app.use("/check-ticket", checkTicketRoute);
 
-// sequelize.sync({ alter: true });
+sequelize.sync({ alter: true });
 
 app.listen(PORT, async () => {
   console.log(`Server running on http://localhost:${PORT}`);
