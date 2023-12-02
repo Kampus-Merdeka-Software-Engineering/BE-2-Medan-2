@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const bookings = require("../../js/bookings");
-const bookTicket = require("../../model/book_ticket");
+const bookTicket = require("../models/book_ticket");
 
 router.post("/", async (req, res) => {
   try {
