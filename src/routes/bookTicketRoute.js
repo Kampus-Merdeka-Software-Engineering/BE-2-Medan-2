@@ -1,12 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const bookings = require("../../bookings");
-const bookTicket = require("../models/book_ticket");
+const bookTicket = require("../models/book-ticket");
 
 router.post("/", async (req, res) => {
   try {
     await bookTicket.create({
-      id: 123456,
+      id: new Date().getTime(),
       name: req.body.name,
       email: req.body.email,
       phoneNumber: req.body.phoneNumber,
