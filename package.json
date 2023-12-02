@@ -4,7 +4,8 @@
   "description": "back-end-project-group-2",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "group-2",
   "license": "ISC",
