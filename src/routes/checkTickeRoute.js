@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const bookings = require("../../js/bookings");
+const bookings = require("../../bookings");
 
 router.get("/:ticketNumber", (req, res) => {
   let newTicket = { nama: "John" };
