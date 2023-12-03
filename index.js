@@ -5,13 +5,13 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT;
 
+app.use(express.json());
+app.use(cors());
+
 const bookTicketRoute = require("./src/routes/bookTicketRoute");
 const checkTicketRoute = require("./src/routes/checkTickeRoute");
 const database = require("./src/config/dbConfig");
 const sequelize = require("./src/config/dbConfig");
-
-app.use(express.json());
-app.use(cors());
 
 app.use("/book-ticket", bookTicketRoute);
 app.use("/check-ticket", checkTicketRoute);
