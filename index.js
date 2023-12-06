@@ -11,7 +11,6 @@ const PORT = process.env.PORT;
 // ! Middleware
 app.use(express.json());
 app.use(cors());
-app.use(csp);
 
 // ! Import routes after setting up middleware
 const bookTicketRoute = require("./src/routes/bookTicketRoute");
