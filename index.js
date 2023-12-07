@@ -1,7 +1,6 @@
 // ! Import Dependencies
 const express = require("express");
 const cors = require("cors");
-const csp = require("./src/controller/csp");
 require("dotenv").config();
 
 // ! Setting up the server
