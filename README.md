@@ -11,18 +11,20 @@
 
 ## Table of Contents 📑
 
-- [Introduction](#introduction)
-- [Technologies Used](#technologies-used-🚀)
-- [Requirements](#requirements-📋)
-- [Installation](#installation-🛠️)
-- [Usage](#usage-🖲️)
-- [Code Explanation](#code-explanation-📚)
-- [Link to WanToGo Final Project](#link-to-wantogo-final-project-👩‍💻)
-- [Team 2 Section Medan](#team-2-section-medan-💡)
-- [Contributing](#contributing-🤝)
-- [Show your support](#show-your-support-💪)
-- [Acknowledgments](#acknowledgments-🙏)
-- [End](#end-👋)
+- [WanToGo - Server Side (API)](#wantogo---server-side-api)
+  - [Table of Contents 📑](#table-of-contents-)
+  - [Introduction](#introduction)
+  - [Technologies Used 🚀](#technologies-used-)
+  - [Requirements 📋](#requirements-)
+  - [Installation 🛠️](#installation-️)
+  - [Usage 🖲️](#usage-️)
+  - [Code Explanation 📚](#code-explanation-)
+  - [Link to WanToGo Final Project 👩‍💻](#link-to-wantogo-final-project-)
+  - [Team 2 Section Medan 💡](#team-2-section-medan-)
+  - [Contributing 🤝](#contributing-)
+  - [Show your support 💪](#show-your-support-)
+  - [Acknowledgments 🙏](#acknowledgments-)
+  - [End 👋](#end-)
 
 ## Introduction
 
