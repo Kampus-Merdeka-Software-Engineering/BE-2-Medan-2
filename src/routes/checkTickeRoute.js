@@ -12,7 +12,7 @@ router.get("/:ticketNumber", async (req, res) => {
       return res.status(404).send("Ticket not found");
     }
   } catch (error) {
-    return res.status(500).send("Data gagal ditambahkan");
+    return res.status(500).send("Failed to add data");
   }
 });
 
