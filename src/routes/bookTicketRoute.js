@@ -4,8 +4,7 @@ const bookTicket = require("../models/book-ticket");
 
 router.post("/", async (req, res) => {
   try {
-    await bookTicket.create({
-      id: new Date().getTime(),
+    const ticket = await bookTicket.create({
       name: req.body.name,
       email: req.body.email,
       phoneNumber: req.body.phoneNumber,
@@ -15,7 +14,7 @@ router.post("/", async (req, res) => {
       arrivalDate: req.body.arrivalDate,
       leavingDate: req.body.leavingDate,
     });
-    res.send({ message: "Data successfully added" });
+    res.send({ message: "Data successfully added", ticketNumber: ticket.id });
   } catch (error) {
     console.log(error);
     res.status(500).send({ message: "Failed to add data" });
