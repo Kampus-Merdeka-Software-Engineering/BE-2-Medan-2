@@ -1,23 +1,25 @@
+// ! Import Dependencies
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 
+// ! Setting up the server
 const app = express();
 const PORT = process.env.PORT;
 
+// ! Middleware
 app.use(express.json());
 app.use(cors());
 
+// ! Import routes after setting up middleware
 const bookTicketRoute = require("./src/routes/bookTicketRoute");
-const checkTicketRoute = require("./src/routes/checkTickeRoute");
-const database = require("./src/config/dbConfig");
-const sequelize = require("./src/config/dbConfig");
+const checkTicketRoute = require("./src/routes/checkTicketRoute");
 
+// ! Use routes
 app.use("/book-ticket", bookTicketRoute);
 app.use("/check-ticket", checkTicketRoute);
 
-// sequelize.sync({ alter: true });
-
+// ! Start the server
 app.listen(PORT, async () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
