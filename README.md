@@ -1,30 +1,41 @@
-# WanToGo - Server Side (API)
+<div align="center">
 
-<p align="center">
- <img
-   src="https://kampus-merdeka-software-engineering.github.io/FE-2-Medan-2/assets/logo/Logo Readme.gif"
-   alt="WanToGo Logo"
-   width="700px"
-   height="300px"
- />
-</p>
+<h1>
+  <img src="https://kampus-merdeka-software-engineering.github.io/FE-2-Medan-2/src/assets/logo/Logo-RevoU.gif" alt="Logo-RevoU" style="vertical-align: middle;" width="50px" />
+  <span style="vertical-align: middle;">&nbsp; WanToGo - Travel Agency Website &nbsp;</span>
+  <img src="https://kampus-merdeka-software-engineering.github.io/FE-2-Medan-2/src/assets/logo/Logo-Kampus-Merdeka.gif" alt="Logo-Kampus-Merdeka" style="vertical-align: middle;" width="50px" />
+</h1>
+
+![GitHub contributors](https://img.shields.io/github/contributors/Kampus-Merdeka-Software-Engineering/BE-2-Medan-2?color=orange&style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/Kampus-Merdeka-Software-Engineering/BE-2-Medan-2?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/Kampus-Merdeka-Software-Engineering/BE-2-Medan-2?style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Kampus-Merdeka-Software-Engineering/BE-2-Medan-2?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/Kampus-Merdeka-Software-Engineering/BE-2-Medan-2?style=for-the-badge)
+
+<br>
+
+<a href="https://github.com/Anmol-Baranwal/GIFs-For-Readme"><img src="https://forthebadge.com/images/badges/made-with-markdown.svg" width="230" height="30" alt="made with markdown badge"></a> 
+
+<img src="https://kampus-merdeka-software-engineering.github.io/FE-2-Medan-2/src/assets/logo/Logo Readme.gif" alt="WanToGo" width="700px" height="300px">
+
+</div>
 
 ## Table of Contents 📑
 
-- [WanToGo - Server Side (API)](#wantogo---server-side-api)
-  - [Table of Contents 📑](#table-of-contents-)
-  - [Introduction](#introduction)
-  - [Technologies Used 🚀](#technologies-used-)
-  - [Requirements 📋](#requirements-)
-  - [Installation 🛠️](#installation-️)
-  - [Usage 🖲️](#usage-️)
-  - [Code Explanation 📚](#code-explanation-)
-  - [Link to WanToGo Final Project 👩‍💻](#link-to-wantogo-final-project-)
-  - [Team 2 Section Medan 💡](#team-2-section-medan-)
-  - [Contributing 🤝](#contributing-)
-  - [Show your support 💪](#show-your-support-)
-  - [Acknowledgments 🙏](#acknowledgments-)
-  - [End 👋](#end-)
+- [Table of Contents 📑](#table-of-contents-)
+- [Introduction](#introduction)
+- [Technologies Used 🚀](#technologies-used-)
+- [Requirements 📋](#requirements-)
+- [Installation 🛠️](#installation-️)
+- [Usage 🖲️](#usage-️)
+- [Code Explanation 📚](#code-explanation-)
+- [Link to WanToGo Final Project 👩‍💻](#link-to-wantogo-final-project-)
+- [Team 2 Section Medan 💡](#team-2-section-medan-)
+- [Contributing 🤝](#contributing-)
+- [Show your support 💪](#show-your-support-)
+- [Acknowledgments 🙏](#acknowledgments-)
+- [End 👋](#end-)
+- [](#)
 
 ## Introduction
 
@@ -118,3 +129,5 @@ Give a ⭐️ if you like this project!
 Thank you for visiting the WanToGo repository and having fun using it. We hope you enjoy using WanToGo as much as we enjoy building it. <br>
 
 **"May this project inspire and benefit you. Let's keep coding together!"**
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="1000">
+---
