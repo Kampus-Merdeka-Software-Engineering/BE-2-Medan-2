@@ -1,29 +1,31 @@
 // Importing required modules
 const express = require("express");
-const router = express.Router();
-const bookTicket = require("../models/book-ticket");
+const Ticket = require("../models/book-ticket");
 
-// Define a GET route with a dynamic parameter 'ticketNumber'
-router.get("/:ticketNumber", async (req, res) => {
+// Create a new router object
+const ticketRouter = express.Router();
+
+// Define a GET route to fetch a ticket by its number
+ticketRouter.get("/:ticketNumber", async (req, res) => {
   try {
     // Extract 'ticketNumber' from the request parameters
-    let ticketNumber = req.params.ticketNumber;
+    const ticketNumber = req.params.ticketNumber;
 
-    // Use the 'findByPk' method from the 'bookTicket' model to find a ticket by its primary key
-    let ticket = await bookTicket.findByPk(ticketNumber);
+    // Use the 'findByPk' method from the 'Ticket' model to find a ticket by its primary key
+    const ticket = await Ticket.findByPk(ticketNumber);
 
     // If a ticket is found, send it in the response
     if (ticket) {
-      return res.send({ ticket });
+      res.status(200).json({ ticket });
     } else {
       // If no ticket is found, send a 404 status code with an error message
-      return res.status(404).send("Ticket not found");
+      res.status(404).json({ error: "Ticket not found" });
     }
   } catch (error) {
     // If an error occurs, send a 500 status code with an error message
-    return res.status(500).send("Failed to add data");
+    res.status(500).json({ error: "Failed to fetch data" });
   }
 });
 
-// Export the router to be used in index.js
-module.exports = router;
+// Export the router to be used in other parts of the application
+module.exports = ticketRouter;
