@@ -1,34 +1,26 @@
 // Importing required modules
 const express = require("express");
-const router = express.Router();
-const bookTicket = require("../models/book-ticket");
+const Ticket = require("../models/book-ticket");
+
+// Create a new router object
+const ticketRouter = express.Router();
 
 // Define a POST route for creating a new ticket
-router.post("/", async (req, res) => {
+ticketRouter.post("/", async (req, res) => {
   try {
-    // Create a new ticket using the 'create' method from the 'bookTicket' model
-    // The ticket data is extracted from the request body
-    const ticket = await bookTicket.create({
-      name: req.body.name,
-      email: req.body.email,
-      phoneNumber: req.body.phoneNumber,
-      message: req.body.message,
-      destination: req.body.destination,
-      quantity: req.body.quantity,
-      arrivalDate: req.body.arrivalDate,
-      leavingDate: req.body.leavingDate,
-    });
+    // Extract ticket data from the request body
+    const ticketData = req.body;
+
+    // Create a new ticket using the 'create' method from the 'Ticket' model
+    const newTicket = await Ticket.create(ticketData);
 
     // If the ticket is successfully created, send a success message along with the ticket id
-    res.send({ message: "Data successfully added", ticketNumber: ticket.id });
+    res.status(201).json({ message: "Ticket successfully added", ticketNumber: newTicket.id });
   } catch (error) {
-    // Log the error for debugging purposes
-    console.log(error);
-
     // If an error occurs, send a 500 status code with an error message
-    res.status(500).send({ message: "Failed to add data" });
+    res.status(500).json({ message: "Failed to add ticket" });
   }
 });
 
-// Export the router to be used in index.js
-module.exports = router;
+// Export the router to be used in other parts of the application
+module.exports = ticketRouter;
