@@ -1,13 +1,13 @@
 // Importing required modules from Sequelize
-const { Sequelize, DataTypes } = require("sequelize");
+const { DataTypes } = require("sequelize");
 // Importing the configured Sequelize instance
 const sequelize = require("../config/dbConfig");
 
-// Defining the 'bookTicket' model using the 'define' method of the Sequelize instance
-const bookTicket = sequelize.define(
-  "bookTicket",
+// Defining the 'Ticket' model using the 'define' method of the Sequelize instance
+const Ticket = sequelize.define(
+  "Ticket",
   {
-    // Defining the fields of the 'bookTicket' model
+    // Defining the fields of the 'Ticket' model
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -55,5 +55,5 @@ const bookTicket = sequelize.define(
   }
 );
 
-// Exporting the 'bookTicket' model to be used in index.js
-module.exports = bookTicket;
+// Exporting the 'Ticket' model to be used in routes
+module.exports = Ticket;
