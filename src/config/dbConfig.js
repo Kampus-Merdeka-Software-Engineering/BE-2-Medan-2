@@ -13,8 +13,8 @@ const sequelize = new Sequelize(
   }
 );
 
-// Immediately Invoked Function Expression (IIFE) to connect to the database
-(async () => {
+// Function to connect to the database
+async function connectToDatabase() {
   try {
     // Attempt to authenticate the connection
     await sequelize.authenticate();
@@ -23,7 +23,10 @@ const sequelize = new Sequelize(
     // Log the error if the connection fails
     console.error("Failed to connect to the MySQL database.", err);
   }
-})();
+}
+
+// Connect to the database
+connectToDatabase();
 
 // Exporting the sequelize instance to be used in book-ticket model
 module.exports = sequelize;
