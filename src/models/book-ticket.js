@@ -1,9 +1,9 @@
-// Importing required modules from Sequelize
+// ! Importing required modules from Sequelize
 const { DataTypes } = require("sequelize");
-// Importing the configured Sequelize instance
+// ! Importing the configured Sequelize instance
 const sequelize = require("../config/dbConfig");
 
-// Defining the 'Ticket' model using the 'define' method of the Sequelize instance
+// ! Defining the 'Ticket' model using the 'define' method of the Sequelize instance
 const Ticket = sequelize.define(
   "Ticket",
   {
@@ -55,5 +55,5 @@ const Ticket = sequelize.define(
   }
 );
 
-// Exporting the 'Ticket' model to be used in routes
+// ! Exporting the 'Ticket' model to be used in routes
 module.exports = Ticket;

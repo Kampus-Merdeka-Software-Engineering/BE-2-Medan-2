@@ -1,7 +1,7 @@
-// Importing Sequelize module
+// ! Importing Sequelize module
 const { Sequelize } = require("sequelize");
 
-// Creating a new Sequelize instance with environment variables for database configuration
+// ! Creating a new Sequelize instance with environment variables for database configuration
 const sequelize = new Sequelize(
   process.env.DATABASE_NAME,
   process.env.DATABASE_USER,
@@ -13,7 +13,7 @@ const sequelize = new Sequelize(
   }
 );
 
-// Function to connect to the database
+// ! Function to connect to the database
 async function connectToDatabase() {
   try {
     // Attempt to authenticate the connection
@@ -25,8 +25,8 @@ async function connectToDatabase() {
   }
 }
 
-// Connect to the database
+// ! Connect to the database
 connectToDatabase();
 
-// Exporting the sequelize instance to be used in book-ticket model
+// ! Exporting the sequelize instance to be used in book-ticket model
 module.exports = sequelize;

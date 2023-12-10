@@ -1,11 +1,11 @@
-// Importing required modules
+// ! Importing required modules
 const express = require("express");
 const Ticket = require("../models/book-ticket");
 
-// Create a new router object
+// ! Create a new router object
 const ticketRouter = express.Router();
 
-// Define a GET route to fetch a ticket by its number
+// ! Define a GET route to fetch a ticket by its number
 ticketRouter.get("/:ticketNumber", async (req, res) => {
   try {
     // Extract 'ticketNumber' from the request parameters
@@ -27,5 +27,5 @@ ticketRouter.get("/:ticketNumber", async (req, res) => {
   }
 });
 
-// Export the router to be used in other parts of the application
+// ! Export the router to be used in other parts of the application
 module.exports = ticketRouter;
