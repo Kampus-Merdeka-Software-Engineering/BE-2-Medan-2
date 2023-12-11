@@ -197,9 +197,19 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments 🙏
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- Etc
+We want to express our deepest appreciation to our instructors and mentor who have lectured and guided us to succeed in our project.
+
+Our Instructors:
+
+1. [Mustofa Ghaleb Amami](https://github.com/cakasuma)
+2. [Rafly Lesmana](https://github.com/RaflyLesmana3003)
+3. [Aji Lantang Mardika](https://github.com/ajilantang)
+
+Our Mentor:
+
+[Ari Yuhendra](https://github.com/myndra1805)
+
+We also want to give a hat tip to anyone whose code was used as inspiration for this project.
 
 ## End 👋
 
